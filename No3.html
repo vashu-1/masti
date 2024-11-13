@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div
+        class="tenor-gif-embed"
+        data-postid="14625371"
+        data-share-method="host"
+        data-aspect-ratio="1"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/cry-anime-sad-tear-gif-14625371"
+          >Cry Anime Sticker</a
+        >from <a href="https://tenor.com/search/cry-stickers">Cry Stickers</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <h1 id="center">Baby Man jao na! Kitna bhav khaogi 😭</h1>
+      <p id="center">Bahut galat baat hai yrr, Dil dukha rahi ho.😭</p>
+
+      <div id="center">
+        <button class="uppar" onclick="redirectToYes()">Yes</button>
+        <button class="niche" id="catchMeButton">No</button>
+      </div>
+    </div>
+
+    <script>
+      function redirectToYes() {
+        window.location.href = "No4.html";
+      }
+
+      const button = document.getElementById("catchMeButton");
+
+      button.addEventListener("mouseenter", () => {
+        const maxX = -(window.innerWidth * 0.4 - button.clientWidth);
+        const minY = 0;
+        const maxY = -(window.innerHeight * 0.5 - button.clientHeight);
+
+        const x = Math.random() * maxX;
+        const y = Math.random() * (maxY - minY) + minY;
+
+        button.style.transform = `translate(${x}px, ${y}px)`;
+      });
+    </script>
+  </body>
+</html>
